@@ -1,66 +1,73 @@
-# 🛍️ Módulo Core: Catálogo de Produtos e Gerenciamento de Usuários
+# 🛍️ Core Module: Product Catalog and User Management
 
-## 📌 Descrição
-Este é o serviço principal da aplicação, responsável por:
-- Gerenciar todo o **catálogo de produtos (CRUD)**
-- Realizar **cadastro e autenticação de clientes** com **JWT**
+## 📌 Description
+
+This is the main service of the application, responsible for:
+
+* Managing the entire **product catalog (CRUD)**
+* Handling **customer registration and authentication** with **JWT**
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 ### Backend
-- Java **17**
-- Spring Boot **3**
-- Spring Security **6** (autenticação JWT)
-- Spring Data JPA / Hibernate
 
-### Banco de Dados
-- H2 (**ambiente de desenvolvimento**)
+* Java **17**
+* Spring Boot **3**
+* Spring Security **6** (JWT authentication)
+* Spring Data JPA / Hibernate
 
-### Testes
-- JUnit **5**
-- Mockito
+### Database
 
-### Outros
-- Lombok
-- Maven
-- Docker
+* H2 (**development environment**)
 
----
+### Testing
 
-## ▶️ Como Executar
+* JUnit **5**
+* Mockito
 
-### 📋 Pré-requisitos
-- JDK **17+**
-- Maven **3.2+**
-- Docker (opcional)
+### Others
+
+* Lombok
+* Maven
+* Docker
 
 ---
 
-### 🚀 Executando com o Spring Boot
-Você pode rodar a aplicação diretamente pela IDE ou usando o Maven:
+## ▶️ How to Run
+
+### 📋 Prerequisites
+
+* JDK **17+**
+* Maven **3.2+**
+* Docker (optional)
+
+---
+
+### 🚀 Running with Spring Boot
+
+You can run the application directly from your IDE or using Maven:
 
 ```bash
 ./mvnw spring-boot:run
-````
+```
 
-A API estará disponível em:
+The API will be available at:
 👉 `http://localhost:8080`
 
 ---
 
-### 🐳 Executando com Docker
+### 🐳 Running with Docker
 
-1. **Construir a imagem Docker**
+1. **Build the Docker image**
 
    ```bash
    docker build -t auth-microservice .
    ```
 
-2. **Executar o contêiner**
+2. **Run the container**
 
    ```bash
    docker run -p 8080:8080 auth-microservice
    ```
----
